@@ -229,11 +229,47 @@ nav {
   }
 }
 nav .nav-links a {
+  -webkit-animation: rainbow 10s infinite;
   justify-content: space-around;
   text-decoration: none;
   color: #212529;
   font-size: 1.2em;
   padding: 20px;
+}
+@-webkit-keyframes rainbow {
+  0% {
+    color: orange;
+  }
+  10% {
+    color: purple;
+  }
+  20% {
+    color: red;
+  }
+  30% {
+    color: CadetBlue;
+  }
+  40% {
+    color: yellow;
+  }
+  50% {
+    color: coral;
+  }
+  60% {
+    color: green;
+  }
+  70% {
+    color: cyan;
+  }
+  80% {
+    color: DeepPink;
+  }
+  90% {
+    color: DodgerBlue;
+  }
+  100% {
+    color: orange;
+  }
 }
 .footer {
   width: 100%;
@@ -289,6 +325,11 @@ nav .nav-links a {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 95%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
