@@ -16,3 +16,33 @@ button {
 .header-image {
     padding-bottom: 30px;
 }
+
+@mobile: ~"(max-width: 500px)";
+
+// nav {
+//     @media @mobile {
+//         margin: 0px 0px;
+//         display: flex;
+//         flex-flow: column nowrap;
+//         height: 300px;
+//         .nav-links {
+//             display: flex;
+//             flex-flow: row;
+//         }
+//     }
+// }
+
+.content-section {
+    @media @mobile {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+        .inverse-content {
+            display:flex;
+            flex-direction: reverse-column;
+            width: 100%;
+        }
+    }
+}
+
+    
