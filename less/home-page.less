@@ -10,12 +10,21 @@
     
     .text-content {
       width: 48%;
-      padding-right: 1%;
+      padding-right: 1%;  
+
+      @media @mobile {
+        width: 95%
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile {
+        width: 95%;
+        text-align: center;
+      }
 
       img {
         border-radius: 10px;
@@ -56,13 +65,13 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      
-      // button {
-      //   background-color: @eastern-blue;
-      //   border-radius: 5px;
-      //   padding: 10px 20px;
-      //   color: @white;
-      // }
+      @media @mobile {
+        width: 95%;
+
+        .btn {
+          text-align: center;
+        }
+        }
     }
   }
-}// home
+}

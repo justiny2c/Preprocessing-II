@@ -5,6 +5,13 @@ button {
   color: #FFFFFF;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  button {
+    margin: 2%;
+    width: 100%;
+    text-align: center;
+  }
+}
 .header-image {
   padding-bottom: 30px;
 }
@@ -12,12 +19,21 @@ button {
   .content-section {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
   }
-  .content-section .inverse-content {
+}
+@media (max-width: 500px) {
+  .inverse-content {
     display: flex;
-    flex-direction: reverse-column;
-    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -196,7 +212,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 20px;
-  margin: 30px 110px;
+  margin: 25px 9%;
   border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
@@ -240,9 +256,20 @@ nav .nav-links a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 95%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 95%;
+    text-align: center;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -275,4 +302,12 @@ nav .nav-links a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 95%;
+  }
+  .home .content-pick .destination .btn {
+    text-align: center;
+  }
 }
