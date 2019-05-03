@@ -10,12 +10,21 @@
     
     .text-content {
       width: 48%;
-      padding-right: 1%;
+      padding-right: 1%;  
+
+      @media @mobile {
+        width: 95%
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile {
+        width: 95%;
+        text-align: center;
+      }
 
       img {
         border-radius: 10px;
@@ -41,6 +50,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 95%;
+    }
 
     img {
       border-radius: 10px;
@@ -56,6 +68,13 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 95%;
+
+        .btn {
+          text-align: center;
+        }
+        }
     }
   }
-}// home
+}

@@ -1,1 +1,47 @@
 // Navigation Styles here
+@mobile: ~"(max-width: 500px)";
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin: 25px 9%;
+    border-bottom: 2px dashed @silver;
+    
+    @media (max-width: 500px){
+        margin: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        height: 100%;
+        .nav-links {
+            display: flex;
+            flex-flow: row;
+        }
+    }
+    .nav-links a {
+        -webkit-animation: rainbow 10s infinite;
+        justify-content: space-around;
+        text-decoration: none;
+        color: @shark;
+        font-size: 1.2em;
+        padding: 20px;
+    }
+}
+
+@-webkit-keyframes rainbow {
+    0%{color: orange;}	
+    10%{color: purple;}	
+      20%{color: red;}
+    30%{color: CadetBlue;}
+      40%{color: yellow;}
+    50%{color: coral;}
+      60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+      100%{color: orange;}
+  }
+
